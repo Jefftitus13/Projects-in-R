@@ -1,13 +1,9 @@
 # Data_Cleaning
 #Removing unneeded columns
 players_19$player_url <- NULL
-
 players_19$real_face <- NULL
-
 players_19$international_reputation <- NULL
-
 players_19$body_type <- NULL
-
 players_19$player_tags <- NULL
 
 #Viewing the table

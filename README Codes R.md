@@ -1,4 +1,4 @@
-# Data_Cleaning
+# Data_Cleaning using R
 #Removing unneeded columns
 players_19$player_url <- NULL
 players_19$real_face <- NULL
@@ -38,7 +38,7 @@ players_19 <- unite(players_19, 'club_and_nation_positions', team_position, nati
 View(players_19)
 
 
-# Data_Analysing
+# Data_Analysing using R
 #Finding average ratings of movies
 average_ratings <- mean(imdb_top_1000$IMDB_Rating)
 print(average_ratings)

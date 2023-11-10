@@ -121,9 +121,11 @@ View(names)
 #Turns out only Martin Scorsese movies have been in top IMDB rating for 10 times
 
 #Correlating two actors' names on basis of top rated IMDB
-star_name <- imdb_top_1000 %>% filter(Star1 == "Leonardo DiCaprio")
-View(star_name)
-
-star_name2 <- imdb_top_1000 %>% filter(Star1  == "Christian Bale")
-View(star_name2)
-#Dicaprio has more top rated IMDB movies compared to Christian bale
+stars <- c("Leonardo DiCaprio", "Christian Bale")
+stars_name <- imdb_top_1000 %>% group_by(Series_Title) %>%
+  drop_na() %>% 
+  filter(Star1%in%stars) %>% 
+  filter(IMDB_Rating>7) %>% 
+  arrange(-IMDB_Rating)
+View(stars_name)
+#Dicaprio has appeared many times compare to Christian Bale

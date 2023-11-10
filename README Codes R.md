@@ -120,7 +120,7 @@ names <- imdb_top_1000 %>% filter(Director%in%directors) %>% arrange(-IMDB_Ratin
 View(names)
 #Turns out only Martin Scorsese movies have been in top IMDB rating for 10 times
 
-#To filter particular star's name
+#Correlating two actors' names on basis of top rated IMDB
 star_name <- imdb_top_1000 %>% filter(Star1 == "Leonardo DiCaprio")
 View(star_name)
 

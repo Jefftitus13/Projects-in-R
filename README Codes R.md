@@ -114,7 +114,7 @@ director <- imdb_top_1000 %>% filter(Director == "Christopher Nolan")
 View(director)
 #Nolan got eight of his movies in top IMDB rating
 
-#To filter more than two directors
+#To find which directors have more movies in the IMDB ratings
 directors <- c("Christopher Nolan", "Martin Scorsese", "David Fincher", "Quentin Tarantino")
 names <- imdb_top_1000 %>% filter(Director%in%directors) %>% arrange(-IMDB_Rating)
 View(names)

@@ -1,4 +1,5 @@
 # Data_Cleaning using R
+
 #Removing unneeded columns
 players_19$player_url <- NULL
 players_19$real_face <- NULL
@@ -39,6 +40,7 @@ View(players_19)
 
 
 # Data_Analysing using R
+
 #Finding average ratings of movies
 average_ratings <- mean(imdb_top_1000$IMDB_Rating)
 print(average_ratings)
@@ -132,6 +134,7 @@ View(stars_name)
 
 
 **#Data_visualization using R**
+
 data(mtcars)
 View(mtcars)
 library(ggplot2)
@@ -144,8 +147,7 @@ ggplot(mtcars, aes(x = factor(gear), y = mpg)) +
        y="Average MPG") +
   theme_minimal()
   
-  
-#Scatterplot
+  #Scatterplot
 ggplot(mtcars, aes(x = wt, y = mpg, alpha=wt)) +
   geom_point(color="orange", size=3, shape=19) +
   labs(title="Scatter Plot of MPG against Weight",

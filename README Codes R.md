@@ -133,7 +133,7 @@ View(stars_name)
 #Dicaprio has appeared many times compare to Christian Bale
 
 
-**#Data_visualization using R**
+#Data_visualization using R
 
 data(mtcars)
 View(mtcars)
